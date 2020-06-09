@@ -21,14 +21,14 @@
                     <ul class="navbar-nav mr-auto"></ul>
                     <ul class="navbar-nav">
                         {{-- タスク作成ページへのリンク --}}
-                        <li class="nav-item">{!! kink_to_route('tasks.create', 'タスクの追加', [], ['class => 'nav-link']) !!}</li>
+                        <li class="nav-item">{!! link_to_route('tasks.create', 'タスクの追加', [], ['class' => 'nav-link']) !!}</li>
                     </ul>
                 </div>
             </nav>
         </header>
         
         {{-- ナビゲーションバー --}}
-        @inclide('commons.navbar')
+        @include('commons.navbar')
         
         <div class="container">
             @yield('content')

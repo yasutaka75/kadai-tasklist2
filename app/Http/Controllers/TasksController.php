@@ -18,7 +18,7 @@ class TasksController extends Controller
         $tasks = Task::all();
         
         return view('tasks.index', [
-            'tasks' =>$tasks,
+            'tasks' => $tasks,
             ]);
     }
 
@@ -76,7 +76,7 @@ class TasksController extends Controller
     {
         $task = Task::findOrFail($id);
         
-        returnview('tasks.edit', [
+        return view('tasks.edit', [
             'task' => $task,
             ]);
     }
